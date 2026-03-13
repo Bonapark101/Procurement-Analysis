@@ -1,6 +1,3 @@
----aggregated PONumber and checked 
----if the total quantity per PONumber matches 
----between purchases and vendori_invoice tables
 WITH invoice_totals AS (
     SELECT VendorNumber, PONumber, SUM(Quantity) AS InvoiceQty
     FROM vendor_invoice
