@@ -1,10 +1,3 @@
----To inspect prcie variances
---ALTER TABLE vendor_invoice
---ADD COLUMN ActualUnitPrice NUMERIC;
-
---UPDATE vendor_invoice
---SET ActualUnitPrice = Dollars / Quantity;
-
 SELECT
 p.VendorName,
 p.PurchasePrice AS ActualUnitPrice,
